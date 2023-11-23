@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 10px;
+}
+.list {
+  padding: 20px 20px;
+  color: white;
+  width: 300px;
+  min-height: 70vh;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 40px;
+  line-height: 50px;
+  transition: 1s;
+}
+
+.taskName {
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.listTitle {
+  transition: 1s;
+  max-width: 300px;
+  word-wrap: break-word;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin: 10px auto;
+}
+.listTitle:hover {
+  border-radius: 20px;
+  background: white;
+  color: #6096b4;
+}
+.btn {
+  padding: 5px 20px;
+  font-size: 16px;
+  color: #6096b4;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #93bfcf;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 370px) {
+  .list {
+    width: 250px;
+  }
+  .listTitle {
+    max-width: 250px;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 315px) {
+  .list {
+    width: 180px;
+  }
+  .listTitle {
+    max-width: 180px;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 245px) {
+  .list {
+    width: 120px;
+  }
+  .listTitle {
+    max-width: 120px;
+    padding: 3px 5px;
+  }
+}
+
+@media (max-width: 170px) {
+  .list {
+    width: 80px;
+  }
+  .listTitle {
+    max-width: 80px;
+    padding: 3px 5px;
+  }
+}
